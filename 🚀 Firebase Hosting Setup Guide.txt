@@ -67,4 +67,16 @@ npm install -g firebase-tools | Install Firebase CLI
 firebase --version | Check installed version
 firebase init | Initialize Firebase project
 firebase deploy | Deploy to Firebase Hosting
+
 firebase serve | Run project locally
+
+
+
+
+
+
+
+
+
+or else just copy/click on this link 
+https://serenai-3764a.web.app
