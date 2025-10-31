@@ -1,0 +1,43 @@
+[debug] [2025-10-31T18:18:15.636Z] ----------------------------------------------------------------------
+[debug] [2025-10-31T18:18:15.637Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\KATTA CHARAN RAJ\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2025-10-31T18:18:15.637Z] CLI Version:   14.23.0
+[debug] [2025-10-31T18:18:15.637Z] Platform:      win32
+[debug] [2025-10-31T18:18:15.637Z] Node Version:  v25.1.0
+[debug] [2025-10-31T18:18:15.637Z] Time:          Fri Oct 31 2025 23:48:15 GMT+0530 (India Standard Time)
+[debug] [2025-10-31T18:18:15.637Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-10-31T18:18:15.749Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-10-31T18:18:15.749Z] > authorizing via signed-in user (kattacharanraj@gmail.com)
+[debug] [2025-10-31T18:18:15.749Z] [iam] checking project serenai-3764a for permissions ["firebase.projects.get"]
+[debug] [2025-10-31T18:18:15.749Z] Checked if tokens are valid: true, expires at: 1761937936322
+[debug] [2025-10-31T18:18:15.749Z] Checked if tokens are valid: true, expires at: 1761937936322
+[debug] [2025-10-31T18:18:15.750Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/serenai-3764a:testIamPermissions [none]
+[debug] [2025-10-31T18:18:15.750Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/serenai-3764a:testIamPermissions x-goog-quota-user=projects/serenai-3764a
+[debug] [2025-10-31T18:18:15.750Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/serenai-3764a:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-10-31T18:18:17.211Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/serenai-3764a:testIamPermissions 200
+[debug] [2025-10-31T18:18:17.211Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/serenai-3764a:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-10-31T18:18:17.212Z] Checked if tokens are valid: true, expires at: 1761937936322
+[debug] [2025-10-31T18:18:17.212Z] Checked if tokens are valid: true, expires at: 1761937936322
+[debug] [2025-10-31T18:18:17.212Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/serenai-3764a [none]
+[debug] [2025-10-31T18:18:17.549Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/serenai-3764a 200
+[debug] [2025-10-31T18:18:17.549Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/serenai-3764a {"projectNumber":"857538611371","projectId":"serenai-3764a","lifecycleState":"ACTIVE","name":"serenai","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-10-31T16:21:55.427806Z"}
+[info] 
+[info] === Serving from 'C:\Users\KATTA CHARAN RAJ\Documents\SerenAI-Website'...
+[info] 
+[debug] [2025-10-31T18:18:17.551Z] Checked if tokens are valid: true, expires at: 1761937936322
+[debug] [2025-10-31T18:18:17.551Z] Checked if tokens are valid: true, expires at: 1761937936322
+[debug] [2025-10-31T18:18:17.551Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/serenai-3764a/sites 
+[debug] [2025-10-31T18:18:18.812Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/serenai-3764a/sites 200
+[debug] [2025-10-31T18:18:18.812Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/serenai-3764a/sites {"sites":[{"name":"projects/serenai-3764a/sites/serenai-3764a","defaultUrl":"https://serenai-3764a.web.app","appId":"1:857538611371:web:5c7503467951c055ac0fee","type":"DEFAULT_SITE"}]}
+[debug] [2025-10-31T18:18:18.812Z] Checked if tokens are valid: true, expires at: 1761937936322
+[debug] [2025-10-31T18:18:18.812Z] Checked if tokens are valid: true, expires at: 1761937936322
+[debug] [2025-10-31T18:18:18.812Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/serenai-3764a/webApps/1:857538611371:web:5c7503467951c055ac0fee/config [none]
+[debug] [2025-10-31T18:18:19.546Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/serenai-3764a/webApps/1:857538611371:web:5c7503467951c055ac0fee/config 200
+[debug] [2025-10-31T18:18:19.546Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/serenai-3764a/webApps/1:857538611371:web:5c7503467951c055ac0fee/config {"projectId":"serenai-3764a","appId":"1:857538611371:web:5c7503467951c055ac0fee","storageBucket":"serenai-3764a.firebasestorage.app","apiKey":"AIzaSyAAoHR_pHv3urADHpmYX9q-CXTqxf0adCo","authDomain":"serenai-3764a.firebaseapp.com","messagingSenderId":"857538611371","projectNumber":"857538611371","version":"2"}
+[debug] [2025-10-31T18:18:19.554Z] Checked if tokens are valid: true, expires at: 1761937936322
+[debug] [2025-10-31T18:18:19.554Z] Checked if tokens are valid: true, expires at: 1761937936322
+[debug] [2025-10-31T18:18:19.554Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/serenai-3764a [none]
+[debug] [2025-10-31T18:18:20.132Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/serenai-3764a 200
+[debug] [2025-10-31T18:18:20.133Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/serenai-3764a {"projectId":"serenai-3764a","projectNumber":"857538611371","displayName":"serenai","name":"projects/serenai-3764a","resources":{"hostingSite":"serenai-3764a"},"state":"ACTIVE","etag":"1_0695af41-8765-44c6-a097-3ae5ef163129"}
+[info] i  hosting[serenai-3764a]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[serenai-3764a]: Local server: http://localhost:5002 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5002\u001b[22m\u001b[24m"}}
