@@ -1,0 +1,70 @@
+🚀 Firebase Hosting Setup Guide
+
+This guide will help you install, initialize, and deploy your web project using Firebase Hosting.
+
+------------------------------------------------------------
+🧩 1. Install Firebase CLI
+------------------------------------------------------------
+
+First, install the Firebase Command Line Interface (CLI) globally using npm:
+
+    npm install -g firebase-tools
+
+✅ Verify the installation:
+
+    firebase --version
+
+If it shows a version number (e.g., 13.0.1), Firebase CLI is successfully installed.
+
+------------------------------------------------------------
+📁 2. Initialize or Manage a Firebase Project
+------------------------------------------------------------
+
+Navigate to your project’s root directory:
+
+    cd your-project-folder
+
+Initialize Firebase in your project:
+
+    firebase init
+
+Follow the on-screen prompts to:
+- Select your Firebase project
+- Enable desired services (e.g., Hosting, Functions)
+- Choose your public directory (commonly dist or build)
+- Configure as a single-page app if applicable
+
+------------------------------------------------------------
+🌐 3. Deploy to Firebase Hosting
+------------------------------------------------------------
+
+Once setup is complete, deploy your website with:
+
+    firebase deploy
+
+After deployment, Firebase will provide a public URL for your live site.
+
+Example:
+    🔗 https://serenai-3764a.web.app
+
+------------------------------------------------------------
+🧠 4. Serve Locally (Development Mode)
+------------------------------------------------------------
+
+To preview your project locally before deployment:
+
+    firebase serve
+
+Then, open the provided local URL (usually http://localhost:5000) in your browser.
+
+------------------------------------------------------------
+✅ Summary
+------------------------------------------------------------
+
+Command | Description
+-------- | ------------
+npm install -g firebase-tools | Install Firebase CLI
+firebase --version | Check installed version
+firebase init | Initialize Firebase project
+firebase deploy | Deploy to Firebase Hosting
+firebase serve | Run project locally
