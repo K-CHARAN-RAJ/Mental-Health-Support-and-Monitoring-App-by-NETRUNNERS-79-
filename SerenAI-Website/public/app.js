@@ -201,3 +201,108 @@ window.addEventListener('load', () => {
 });
 
 console.log('SerenAI - Your journey to emotional wellness begins here 💜');
+
+// About Us Modal Functionality
+const aboutUsLink = document.getElementById('aboutUsLink');
+if (aboutUsLink) {
+    aboutUsLink.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        // Create modal overlay
+        const overlay = document.createElement('div');
+        overlay.style.cssText = 'position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 10000; display: flex; align-items: center; justify-content: center;';
+
+        // Create modal content
+        const modalContent = document.createElement('div');
+        modalContent.style.cssText = 'background: white; padding: 40px; border-radius: 20px; max-width: 600px; width: 90%; box-shadow: 0 10px 40px rgba(0,0,0,0.3); position: relative;';
+
+        modalContent.innerHTML = `
+            <button style="position: absolute; top: 15px; right: 15px; background: none; border: none; font-size: 30px; cursor: pointer; color: #666; line-height: 1;">&times;</button>
+            <h2 style="color: #7c3aed; margin-bottom: 20px; font-size: 28px;">About Us</h2>
+            <h3 style="color: #333; margin-bottom: 15px; font-size: 20px;">Team NETRUNNERS - 79</h3>
+            <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+                <thead>
+                    <tr style="background: #f3f4f6;">
+                        <th style="padding: 12px; text-align: left; border-bottom: 2px solid #7c3aed;">Name</th>
+                        <th style="padding: 12px; text-align: left; border-bottom: 2px solid #7c3aed;">Roll Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 12px; border-bottom: 1px solid #e5e7eb;">KATTA CHARAN RAJ</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #e5e7eb;">24671A7394</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 12px; border-bottom: 1px solid #e5e7eb;">GADDAM ALEKHYA</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #e5e7eb;">24671A7382</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 12px; border-bottom: 1px solid #e5e7eb;">KOONA SAISIRI</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #e5e7eb;">24671A7397</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 12px;">GONIABBA RAJADATTA GOUD</td>
+                        <td style="padding: 12px;">24671A7321</td>
+                    </tr>
+                </tbody>
+            </table>
+        `;
+
+        overlay.appendChild(modalContent);
+        document.body.appendChild(overlay);
+
+        // Close modal on overlay click
+        overlay.addEventListener('click', function(e) {
+            if (e.target === overlay) {
+                document.body.removeChild(overlay);
+            }
+        });
+
+        // Close modal on close button click
+        const closeBtn = modalContent.querySelector('button');
+        closeBtn.addEventListener('click', function() {
+            document.body.removeChild(overlay);
+        });
+    });
+}
+
+// Contact Modal Functionality
+const contactLink = document.getElementById('contactLink');
+if (contactLink) {
+    contactLink.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        // Create modal overlay
+        const overlay = document.createElement('div');
+        overlay.style.cssText = 'position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 10000; display: flex; align-items: center; justify-content: center;';
+
+        // Create modal content
+        const modalContent = document.createElement('div');
+        modalContent.style.cssText = 'background: white; padding: 40px; border-radius: 20px; max-width: 500px; width: 90%; box-shadow: 0 10px 40px rgba(0,0,0,0.3); position: relative; text-align: center;';
+
+        modalContent.innerHTML = `
+            <button style="position: absolute; top: 15px; right: 15px; background: none; border: none; font-size: 30px; cursor: pointer; color: #666; line-height: 1;">&times;</button>
+            <div style="font-size: 60px; margin-bottom: 20px;">📧</div>
+            <h2 style="color: #7c3aed; margin-bottom: 15px; font-size: 28px;">Contact Us</h2>
+            <p style="color: #666; margin-bottom: 25px; font-size: 16px;">Get in touch with us via email</p>
+            <a href="mailto:kattacharanraj@gmail.com" style="color: #7c3aed; font-size: 20px; text-decoration: none; font-weight: 600; word-break: break-all;">kattacharanraj@gmail.com</a>
+            <p style="margin-top: 25px; color: #999; font-size: 14px;">We'll get back to you as soon as possible!</p>
+        `;
+
+        overlay.appendChild(modalContent);
+        document.body.appendChild(overlay);
+
+        // Close modal on overlay click
+        overlay.addEventListener('click', function(e) {
+            if (e.target === overlay) {
+                document.body.removeChild(overlay);
+            }
+        });
+
+        // Close modal on close button click
+        const closeBtn = modalContent.querySelector('button');
+        closeBtn.addEventListener('click', function() {
+            document.body.removeChild(overlay);
+        });
+    });
+}
